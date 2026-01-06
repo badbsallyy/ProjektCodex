@@ -9,7 +9,7 @@ interface TabItem<T extends string> {
 }
 
 interface TabsProps<T extends string> {
-  items: Array<TabItem<T>>;
+  items: ReadonlyArray<TabItem<T>>;
   active: T;
   onChange: (value: T) => void;
   className?: string;
